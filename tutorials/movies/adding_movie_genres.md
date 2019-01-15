@@ -73,11 +73,11 @@ And move it to *Modules/Common/Navigation/NavigationItems.cs*:
 
 ```cs
 //...
-[assembly: NavigationMenu(2000, "Movie Database", icon: "icon-film")]
+[assembly: NavigationMenu(2000, "Movie Database", icon: "fa-film")]
 [assembly: NavigationLink(2100, "Movie Database/Movies", 
-    typeof(MovieDB.MovieController), icon: "icon-camcorder")]
+    typeof(MovieDB.MovieController), icon: "fa-video-camera")]
 [assembly: NavigationLink(2200, "Movie Database/Genres", 
-    typeof(MovieDB.GenreController), icon: "icon-pin")]
+    typeof(MovieDB.GenreController), icon: "fa-thumb-tack")]
 //...
 ```
 
