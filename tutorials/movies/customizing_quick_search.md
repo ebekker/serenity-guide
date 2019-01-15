@@ -177,12 +177,11 @@ namespace MovieTutorial.MovieDB
 
         protected getQuickSearchFields(): Serenity.QuickSearchField[]
         {
-            let fld = MovieRow.Fields;
             return [
                 { name: "", title: "all" },
-                { name: fld.Description, title: "description" },
-                { name: fld.Storyline, title: "storyline" },
-                { name: fld.Year, title: "year" }
+                { name: MovieRow.Fields.Description, title: "description" },
+                { name: MovieRow.Fields.Storyline, title: "storyline" },
+                { name: MovieRow.Fields.Year, title: "year" }
             ];
         }
     }
@@ -208,9 +207,9 @@ namespace MovieTutorial.MovieDB
                 MovieRow.localTextPrefix + "." + s).toLowerCase();
             return [
                 { name: "", title: "all" },
-                { name: fld.Description, title: txt(fld.Description) },
-                { name: fld.Storyline, title: txt(fld.Storyline) },
-                { name: fld.Year, title: txt(fld.Year) }
+                { name: MovieRow.Fields.Description, title: txt(MovieRow.Fields.Description) },
+                { name: MovieRow.Fields.Storyline, title: txt(MovieRow.Fields.Storyline) },
+                { name: MovieRow.Fields.Year, title: txt(MovieRow.Fields.Year) }
             ];
         }
     }
